@@ -4,11 +4,11 @@ A full-stack Notice Board application built with **Next.js (Pages Router)**, **P
 
 ## 🚀 Live Demo
 
-Vercel: (https://notice-board-drab.vercel.app/)
+Vercel: https://notice-board-drab.vercel.app/
 
 ## 📂 GitHub Repository
 
-GitHub: (https://github.com/mdsahbazkhan/notice-board)
+GitHub: https://github.com/mdsahbazkhan/notice-board
 
 ---
 
