@@ -8,7 +8,7 @@ Vercel: _Add your deployed Vercel URL here_
 
 ## 📂 GitHub Repository
 
-GitHub: _Add your public GitHub repository URL here_
+GitHub: (https://github.com/mdsahbazkhan/notice-board)
 
 ---
 
