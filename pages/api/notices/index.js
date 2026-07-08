@@ -12,7 +12,7 @@ export default async function handler(req, res) {
     if (req.method === "POST") {
       const { title, body, category, priority, publishDate, image } = req.body;
 
-      if (!title || !body) {
+      if (!title?.trim() || !body?.trim()) {
         return res.status(400).json({
           message: "Title and Body are required",
         });

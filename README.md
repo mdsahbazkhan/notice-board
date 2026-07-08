@@ -1,40 +1,154 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Notice Board
 
-## Getting Started
+A full-stack Notice Board application built with **Next.js (Pages Router)**, **Prisma**, **PostgreSQL (Neon)**, and **Tailwind CSS**. The application allows users to create, view, edit, and delete notices with server-side validation and persistent storage.
 
-First, run the development server:
+## 🚀 Live Demo
+
+Vercel: _Add your deployed Vercel URL here_
+
+## 📂 GitHub Repository
+
+GitHub: _Add your public GitHub repository URL here_
+
+---
+
+## Features
+
+- Create a new notice
+- View all notices
+- Edit existing notices
+- Delete notices with confirmation
+- Urgent notices displayed first
+- Server-side validation
+- Responsive design for desktop and mobile
+- Data stored in a hosted PostgreSQL database using Prisma
+
+---
+
+## Tech Stack
+
+- Next.js (Pages Router)
+- Prisma ORM
+- PostgreSQL (Neon)
+- Tailwind CSS
+- Axios
+- Vercel
+
+---
+
+## Project Structure
+
+```text
+components/
+lib/
+pages/
+  api/
+  edit/
+prisma/
+public/
+styles/
+```
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+Navigate to the project:
+
+```bash
+cd notice-board
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create a `.env` file and add your database connection:
+
+```env
+DATABASE_URL="your-neon-database-url"
+```
+
+Generate the Prisma Client:
+
+```bash
+npx prisma generate
+```
+
+Push the schema to the database:
+
+```bash
+npx prisma db push
+```
+
+Run the application:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## API Routes
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Method | Route | Description |
+|---------|-------|-------------|
+| GET | `/api/notices` | Get all notices |
+| POST | `/api/notices` | Create a notice |
+| GET | `/api/notices/:id` | Get a single notice |
+| PUT | `/api/notices/:id` | Update a notice |
+| DELETE | `/api/notices/:id` | Delete a notice |
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Database
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+The project uses **Prisma ORM** with a hosted **Neon PostgreSQL** database.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Notice fields:
 
-## Deploy on Vercel
+- Title
+- Body
+- Category
+- Priority
+- Publish Date
+- Optional Image
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## One Improvement With More Time
+
+If I had more time, I would implement image uploads using Cloudinary or Vercel Blob Storage instead of accepting image URLs. I would also add user authentication and pagination for better scalability.
+
+---
+
+## AI Usage
+
+AI tools were used to assist with:
+- Understanding the assignment requirements
+- Reviewing the project structure
+- Explaining Next.js and Prisma concepts
+- Improving UI suggestions
+- Debugging errors and refining API implementation
+
+All code was reviewed, integrated, tested, and modified as needed to ensure it met the assignment requirements.
+
+---
+
+## Author
+
+**Md Sahbaz Alam**
