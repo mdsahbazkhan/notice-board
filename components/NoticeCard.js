@@ -20,7 +20,6 @@ export default function NoticeCard({ notice, onDelete }) {
     <div className="group flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
       {notice.image && (
         <div className="h-40 w-full overflow-hidden bg-gray-100">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={notice.image}
             alt={notice.title}
